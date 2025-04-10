@@ -10,6 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Hello world!
  */
 public class App {
+    public static ApplicationContext context;
     public static void main(String[] args) {
 //        BookingService bookingService = new BookingService();
 //        Booking booking =  Booking.builder()
@@ -26,7 +27,7 @@ public class App {
 //        bookingService.printBooking();
 
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        context = new ClassPathXmlApplicationContext("spring.xml");
         BookingService bookingService = context.getBean("bookingService" , BookingService.class);
 
         bookingService.printBooking();
