@@ -1,16 +1,16 @@
 package com.shreya.spring;
+
 import com.shreya.spring.model.Address;
 import com.shreya.spring.model.Booking;
 import com.shreya.spring.service.BookingService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
 //        BookingService bookingService = new BookingService();
 //        Booking booking =  Booking.builder()
 //        .id(101)
@@ -26,8 +26,9 @@ public class App
 //        bookingService.printBooking();
 
 
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+        BookingService bookingService = context.getBean("bookingService" , BookingService.class);
 
-
-
+        bookingService.printBooking();
     }
 }
