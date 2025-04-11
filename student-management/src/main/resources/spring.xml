@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="studentManagement" class="com.shreya.spring.service.StudentManagement">
+        <!--        <property name="booking" ref="booking" />-->
+        <constructor-arg ref="student"/>
+    </bean>
+
+    <bean id="student" class="com.shreya.spring.model.Student">
+        <property name="id" value="1" />
+        <property name="fees" value="200.00" />
+        <property name="address" ref="address" />
+    </bean>
+
+    <bean id="address" class="com.shreya.spring.model.Address">
+        <property name="addressLine1" value="flat no -1, abc apt" />
+        <property name="addressLine2" value="hadapsar" />
+        <property name="city" value="pune" />
+    </bean>
+
+</beans>
