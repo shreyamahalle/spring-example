@@ -4,10 +4,6 @@ import com.shreya.spring.service.StudentManagement;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static ApplicationContext context;
@@ -15,6 +11,7 @@ public class App
     {
         context = new ClassPathXmlApplicationContext("spring.xml");
         StudentManagement studentManagement = context.getBean("studentManagement", StudentManagement.class);
-         studentManagement.show();
+
+        studentManagement.show();
     }
 }
