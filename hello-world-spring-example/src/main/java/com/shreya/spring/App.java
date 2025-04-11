@@ -12,7 +12,7 @@ public class App {
 //        City city = new City();
 //        city.setName("Pune");
 //        Address address = new Address(city);
-//        helloService.setName("Amit");
+//        helloService.setName("shreya");
 //        helloService.setAddress(address);
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
