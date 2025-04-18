@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="hotelService" class="com.shreya.spring.service.HotelService">
+        <constructor-arg ref="hotel"/>
+    </bean>
+
+    <bean id="hotel" class="com.shreya.spring.model.Hotel">
+        <property name="hotelName" value="xyz"/>
+        <property name="hotelRegisterNo" value="123"/>
+        <property name="GSTNo" value="445"/>
+        <property name="city" value="pune"/>
+    </bean>
+
+    <bean id="booking" class="com.shreya.spring.model.Booking">
+        <property name="id" value="101"/>
+        <property name="price" value="1020"/>
+        <property name="hotel" ref="hotel"/>
+    </bean>
+
+    <bean id="employee" class="com.shreya.spring.model.Employee">
+        <property name="empId" value="101"/>
+        <property name="empName" value="abc"/>
+
+    </bean>
+
+    </beans>
+
+
