@@ -9,4 +9,10 @@ public class HelloRepository {
     public String greet() {
         return "Hello world";
     }
+
+    public String show(){
+        System.out.println("show method");
+        return "hi";
+    }
+
 }
