@@ -19,7 +19,7 @@ public class App
      bookingController.displayBooking();
      bookingController.createBooking();
 
-        BookingRepository bookingRepository = context.getBean("bookingRepository",BookingRepository.class);
-        bookingRepository.findBookingById(101);
+     BookingRepository bookingRepository = context.getBean("bookingRepository",BookingRepository.class);
+     bookingRepository.findBookingById(101);
     }
 }

@@ -15,19 +15,16 @@
    <bean id="bookingController" class="com.shreya.spring.controller.BookingController">
       <property name="bookingService" ref="bookingService"/>
    </bean>
-<!--   <bean id="bookingService" class="com.shreya.spring.controller.BookingController">-->
-<!--      <property name="bookingService" ref="bookingService"/>-->
-<!--   </bean>-->
+
    <bean id="booking" class="com.shreya.spring.model.Booking">
       <property name="id" value="101"/>
       <property name="bookName" value="Book"/>
       <property name="price" value="1435"/>
       <property name="address" ref="address"/>
    </bean>
+
    <bean id="address" class="com.shreya.spring.model.Address">
       <property name="addressLine1" value="pune"/>
       <property name="addressLine2" value="mumbai"/>
    </bean>
-
-
 </beans>

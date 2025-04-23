@@ -17,5 +17,4 @@ public class BookingService {
    public void printBooking(){
       System.out.println("Booking details " + booking);
    }
-
 }
