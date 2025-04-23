@@ -10,6 +10,7 @@ First, you need dependencies in your POM/Gradle:
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
+    <verion>6.2.6</version> //use latest 
 </dependency>
 ```
 
@@ -18,5 +19,6 @@ First, you need dependencies in your POM/Gradle:
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
+    <verion>6.2.6</version> //use latest 
 </dependency>
 ```
