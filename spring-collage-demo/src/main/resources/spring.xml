@@ -15,4 +15,13 @@
         <property name="address" value="pune"/>
     </bean>
 
+    <bean id="library" class="com.shreya.spring.model.Library">
+        <property name="labNo" value="102ST"/>
+        <property name="labAddress" value="pune xyz clg"/>
+
+    </bean>
+
+    <bean id="libraryService" class="com.shreya.spring.service.LibraryService">
+        <property name="library" ref="library"/>
+    </bean>
 </beans>
