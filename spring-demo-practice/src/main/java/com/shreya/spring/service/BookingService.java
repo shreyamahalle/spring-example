@@ -11,6 +11,7 @@ public class BookingService {
    private Booking booking;
 
    public void createBooking(){
+      bookingRepository.saveBooking(booking);
 
    }
    public void printBooking(){
