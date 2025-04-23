@@ -1,4 +1,3 @@
-// File: com/shreya/spring/repository/BookingRepository.java
 package com.shreya.spring.repository;
 
 import com.shreya.spring.model.Booking;
@@ -9,9 +8,9 @@ public class BookingRepository {
         System.out.println("Booking saved: " + booking);
     }
 
-    public Booking findBookingById(int id) {
+    public void findBookingById(int id) {
         // Dummy data for now
-        return Booking.builder()
+        Booking.builder()
                 .id(id)
                 .bookName("Sample Book")
                 .price(1000.0)
