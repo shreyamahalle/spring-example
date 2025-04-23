@@ -1,4 +1,8 @@
 package com.shreya.spring.repository;
 
-public class BookingRepositroy {
+public class BookingRepository {
+
+
+
 }
+

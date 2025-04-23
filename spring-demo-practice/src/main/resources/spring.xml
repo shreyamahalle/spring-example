@@ -1,11 +1,24 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+   <bean id="bookingService" class="com.shreya.spring.service.BookingService">
+      <property name="booking" ref="booking"/>
+   </bean>
+   <bean id="booking" class="com.shreya.spring.model.Booking">
+      <property name="id" value="101"/>
+      <property name="bookName" value="Book"/>
+      <property name="price" value="1435"/>
+      <property name="address" ref="address"/>
+   </bean>
+   <bean id="address" class="com.shreya.spring.model.Address">
+      <property name="addressLine1" value="pune"/>
+      <property name="addressLine2" value="mumbai"/>
+   </bean>
 
 
-
-
-   </beans>
+</beans>
