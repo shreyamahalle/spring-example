@@ -1,4 +1,4 @@
-package org.example;
+package com.shreya.spring;
 
 /**
  * Hello world!
