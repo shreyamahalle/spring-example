@@ -7,7 +7,8 @@ import lombok.Data;
 public class LibraryService {
 
     private Library library;
-    public void showLibrary(){
+
+    public void showLibrary() {
         System.out.println("Library " + library);
     }
 }

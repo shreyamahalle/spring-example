@@ -8,10 +8,11 @@ public class CollageService {
 
     private Collage collage;
 
-    public void show(){
+    public void show() {
 
     }
-    public void printdata(){
+
+    public void printdata() {
         System.out.println("collage " + collage);
     }
 }
