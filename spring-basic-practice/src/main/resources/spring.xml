@@ -4,18 +4,16 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 
+<bean id="car" class="com.shreya.spring.model.Car">
+    <property name="carNo" value="101"/>
+    <property name="carModel" value="Camry"/>
+    <property name="year" value="2023"/>
 
+</bean>
 
+    <bean id="carService" class="com.shreya.spring.service.CarService">
+        <property name="car" ref="car"/>
 
-
-
-
-
-
-
-
-
-
-
+    </bean>
 
 </beans>
