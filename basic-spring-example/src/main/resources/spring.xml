@@ -4,8 +4,8 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
     <bean id="bookingService" class="com.shreya.spring.service.BookingService">
-
-        <constructor-arg ref="booking"/>
+<!--        <constructor-arg ref="booking"/>-->
+        <property name="booking" ref="booking"/>
     </bean>
 
     <bean id="booking" class="com.shreya.spring.model.Booking">
