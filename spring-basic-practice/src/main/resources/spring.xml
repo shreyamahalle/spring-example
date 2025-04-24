@@ -8,8 +8,14 @@
     <property name="carNo" value="101"/>
     <property name="carModel" value="Camry"/>
     <property name="year" value="2023"/>
+    <property name="company" ref="company"/>
 
 </bean>
+
+    <bean id="company" class="com.shreya.spring.model.Company">
+        <property name="name" value="Toyato"/>
+    </bean>
+
 
     <bean id="carService" class="com.shreya.spring.service.CarService">
         <property name="car" ref="car"/>

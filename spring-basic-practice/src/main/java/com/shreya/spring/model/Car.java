@@ -7,4 +7,6 @@ public class Car {
     private int carNo;
     private String carModel;
     private int year;
+    private Company company;
+
 }
